@@ -130,7 +130,7 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
 .\Cortex.Install.ps1 -ConfigFileName Cortex.Innovation.Install.Config.json `
     -AppServicesPath "C:\Install\Cortex Innovation {{< version >}} - App Services.zip" `
     -BlockPackagesPath "C:\Install\Cortex Innovation {{< version >}} - Block Packages.zip" `
-    -ApiGatewayBasicAuthUserName "BasicAuthUser" `
+    -ApiGatewayBasicAuthUsername "BasicAuthUser" `
     -ApiGatewayBasicAuthPwd "ADA9883B11BD4CDC908B8131B57944A4" `
     -CustomerName "Customer1" `
     -ApplicationServerIPv4Addresses @("192.168.1.1", "192.168.1.2", "192.168.1.3") `
@@ -147,7 +147,7 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
 .\Cortex.Install.ps1 -ConfigFileName Cortex.Innovation.Install.Config.json `
     -AppServicesPath "C:\Install\Cortex Innovation {{< version >}} - App Services.zip" `
     -BlockPackagesPath "C:\Install\Cortex Innovation {{< version >}} - Block Packages.zip" `
-    -ApiGatewayBasicAuthUserName "BasicAuthUser" `
+    -ApiGatewayBasicAuthUsername "BasicAuthUser" `
     -ApiGatewayBasicAuthPwd "ADA9883B11BD4CDC908B8131B57944A4" `
     -CustomerName "Customer1" `
     -ApplicationServerIPv4Addresses @("192.168.1.1", "192.168.1.2", "192.168.1.3") `
@@ -161,7 +161,7 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
 .\Cortex.Install.ps1 -ConfigFileName Cortex.Innovation.Install.Config.json `
     -AppServicesPath "C:\Install\Cortex Innovation {{< version >}} - App Services.zip" `
     -BlockPackagesPath "C:\Install\Cortex Innovation {{< version >}} - Block Packages.zip" `
-    -ApiGatewayBasicAuthUserName "BasicAuthUser" `
+    -ApiGatewayBasicAuthUsername "BasicAuthUser" `
     -ApiGatewayBasicAuthPwd "ADA9883B11BD4CDC908B8131B57944A4" `
     -CustomerName "Customer1" `
     -ApplicationServerIPv4Addresses @("192.168.1.1", "192.168.1.2", "192.168.1.3") `
@@ -178,7 +178,7 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
 .\Cortex.Install.ps1 -ConfigFileName Cortex.Innovation.Install.Config.json `
     -AppServicesPath "C:\Install\Cortex Innovation {{< version >}} - App Services.zip" `
     -BlockPackagesPath "C:\Install\Cortex Innovation {{< version >}} - Block Packages.zip" `
-    -ApiGatewayBasicAuthUserName "BasicAuthUser" `
+    -ApiGatewayBasicAuthUsername "BasicAuthUser" `
     -ApiGatewayBasicAuthPwd "ADA9883B11BD4CDC908B8131B57944A4" `
     -CustomerName "Customer1" `
     -ApplicationServerIPv4Addresses @("192.168.1.1", "192.168.1.2", "192.168.1.3") `
@@ -194,7 +194,7 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
     |----------------------------------------------|-------------|
     |`AppServicesPath`                              | Configure this value with the location of the Application Services zip file on the Application Server used for installation. |
     |`BlockPackagesPath`                           | Configure this value with the location of the Block Packages zip file on the Application Server used for installation. |
-    |`ApiGatewayBasicAuthUserName`                     | Configure this value with the username that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows).<br /><br />For security reasons it is recommended that the default value `BasicAuthUser` should be changed.<br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed [later, when upgrading Gateway][Upgrade Gateway]. |
+    |`ApiGatewayBasicAuthUsername`                     | Configure this value with the username that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows).<br /><br />For security reasons it is recommended that the default value `BasicAuthUser` should be changed.<br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed [later, when upgrading Gateway][Upgrade Gateway]. |
     |`ApiGatewayBasicAuthPwd`                      | Configure this value with the password that will be used for Basic Authentication when making HTTPS requests to the API Gateway Service (e.g. starting production flows). <br /><br />This password should be [Cortex Encrypted][]. For security reasons it is recommended that the default value `ADA9883B11BD4CDC908B8131B57944A4` should be changed. <br /><br />This value will be needed [later, when upgrading Gateway][Upgrade Gateway].|
     |`CustomerName`                                | A name identifying the platform being installed. This must have no spaces or symbols. It will be appended to the node names that are displayed in Service Fabric Explorer. |
     |`ApplicationServerIPv4Addresses`              | The IPv4 addresses of the Application Servers. The first of these must be the Application Server used for installation. |
@@ -209,7 +209,7 @@ To avoid answering all of the prompts `-Override 0` can be added to the end of t
     |`AcceptEULA`                                   | This does not need to be changed, the EULA will be accepted at a later stage. |
     |`FilePath`                                   | The filename that installation logs are written to.  If this should be written to a different location than where the installation files are then a full path should be specified. |
 
-    The `ApiGatewayBasicAuthUserName` and `ApiGatewayBasicAuthPwd` will be needed [later, when upgrading Gateway][Upgrade Gateway].
+    The `ApiGatewayBasicAuthUsername` and `ApiGatewayBasicAuthPwd` will be needed [later, when upgrading Gateway][Upgrade Gateway].
 
     {{% alert title="Note" %}}
 More advanced configuration (such as changing ports) can be undertaken by modifying the `Cortex.Innovation.Install.Config.json` file but this shouldn't be required for most installations. More information about this can be found at {{< ahref "Cortex.GettingStarted.OnPremise.InstallInnovationOnly.Advanced.AdvancedConfigMultipleServer" "Advanced Application Server and Load Balancer Configuration Changes" >}}.

@@ -10590,7 +10590,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">.\</span><span style="color:#000">Cortex</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Install</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">FlowDebuggerService</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">ps1</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerServicePath</span> <span style="color:#4e9a06">&#34;C:\Install\Cortex Innovation 2023.3 - Flow Debugger Service.zip&#34;</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-BlockPackagesPath</span> <span style="color:#4e9a06">&#34;C:\Install\Cortex Innovation 2023.3 - Block Packages.zip&#34;</span> <span style="color:#000;font-weight:bold">`</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerBasicAuthUserName</span> <span style="color:#4e9a06">&#34;BasicAuthUser&#34;</span> <span style="color:#000;font-weight:bold">`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerBasicAuthUsername</span> <span style="color:#4e9a06">&#34;BasicAuthUser&#34;</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerBasicAuthPwd</span> <span style="color:#4e9a06">&#34;ADA9883B11BD4CDC908B8131B57944A4&#34;</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-Credential</span> <span style="color:#000">$AppPoolIdentity</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-AcceptEULA:</span><span style="color:#000">$AcceptEula</span> <span style="color:#000;font-weight:bold">`</span>
@@ -10601,7 +10601,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">.\</span><span style="color:#000">Cortex</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Install</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">FlowDebuggerService</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">ps1</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerServicePath</span> <span style="color:#4e9a06">&#34;C:\Install\Cortex Innovation 2023.3 - Flow Debugger Service.zip&#34;</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-BlockPackagesPath</span> <span style="color:#4e9a06">&#34;C:\Install\Cortex Innovation 2023.3 - Block Packages.zip&#34;</span> <span style="color:#000;font-weight:bold">`</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerBasicAuthUserName</span> <span style="color:#4e9a06">&#34;BasicAuthUser&#34;</span> <span style="color:#000;font-weight:bold">`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerBasicAuthUsername</span> <span style="color:#4e9a06">&#34;BasicAuthUser&#34;</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-FlowDebuggerBasicAuthPwd</span> <span style="color:#4e9a06">&#34;ADA9883B11BD4CDC908B8131B57944A4&#34;</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-UseSelfSignedCertificates</span> <span style="color:#000;font-weight:bold">`</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">-Credential</span> <span style="color:#000">$AppPoolIdentity</span> <span style="color:#000;font-weight:bold">`</span>
@@ -10627,7 +10627,7 @@
 <td>Configure this value with the location of the Block Packages zip file on the Web Application Server.</td>
 </tr>
 <tr>
-<td><code>FlowDebuggerBasicAuthUserName</code></td>
+<td><code>FlowDebuggerBasicAuthUsername</code></td>
 <td>Configure this value with the username that will be used for Basic Authentication when Gateway makes HTTPS requests to the Flow Debugger Service. <br /><br />For security reasons it is recommended that the default value <code>BasicAuthUser</code> should be changed.<br /><br />Currently only Basic Authentication using a single user is supported, OAuth2 will be supported in a future release.<br /><br />This value will be needed <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-web-application-server#install-gateway">later, when installing Gateway</a>.</td>
 </tr>
 <tr>
@@ -10868,7 +10868,7 @@ below.</p>
 </tr>
 <tr>
 <td><code>ServiceFabricApiGatewayBasicAuthUsername</code></td>
-<td>This must be changed if you used a non-default <code>ApiGatewayBasicAuthUserName</code> when <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-application-and-loadbalancer-servers#configure-installation-script">installing the Application Servers</a>; if so, this value must be configured to the one used.<br /><br />This will set the <code>ServiceFabricApiGatewayBasicAuthUsername</code> value in the Gateway web.config.</td>
+<td>This must be changed if you used a non-default <code>ApiGatewayBasicAuthUsername</code> when <a href="/docs/getting-started/on-premise/install-innovation-only/multiple-server-with-ha/install-application-and-loadbalancer-servers#configure-installation-script">installing the Application Servers</a>; if so, this value must be configured to the one used.<br /><br />This will set the <code>ServiceFabricApiGatewayBasicAuthUsername</code> value in the Gateway web.config.</td>
 </tr>
 <tr>
 <td><code>ServiceFabricApiGatewayBasicAuthPassword</code></td>
@@ -10880,7 +10880,7 @@ below.</p>
 </tr>
 <tr>
 <td><code>DotNetFlowDebuggerBasicAuthUsername</code></td>
-<td>This must be changed if you used a non-default <code>FlowDebuggerBasicAuthUserName</code> when <a href="#configure-installation-script">installing the Flow Debugger Service</a>; if so, this value must be configured to the one used.<br /><br />This will set the <code>DotNetFlowDebuggerBasicAuthUsername</code> value in the Gateway web.config.</td>
+<td>This must be changed if you used a non-default <code>FlowDebuggerBasicAuthUsername</code> when <a href="#configure-installation-script">installing the Flow Debugger Service</a>; if so, this value must be configured to the one used.<br /><br />This will set the <code>DotNetFlowDebuggerBasicAuthUsername</code> value in the Gateway web.config.</td>
 </tr>
 <tr>
 <td><code>DotNetFlowDebuggerBasicAuthPassword</code></td>
